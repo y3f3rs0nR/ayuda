@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitud Permiso</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <div class="nav">
+    <div class="logo">
+      <img src="/pvh.jpg" alt="Logo PVH">
+    </div>
+    <h1 class="nav__title">Portal de Permisos Vista Hermosa</h1>
+    <nav class="nav__bar">
+      <ul>
+        <li><a href="#admin">Admin</a></li>
+        <li><a href="/login.html">Iniciar sesión</a></li>
+        <li><a href="/index.html">Cerrar sesión</a></li>
+        <li><a href="/solicitud.html">Solicitar permiso</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="form solicitud">
+
+    <h2 class="form__title">Ingreso de Solicitud</h2>
+
+    
+      <form action="">
+
+        <label for="complaint-name">Nombre del denunciante</label>
+        <input type="text" id="complaint-name" placeholder="--------" required>
+        
+        <label for="complaint-lastname">Apellido del denunciante</label>
+        <input type="text" id="complaint-lastname" required>
+
+        <label for="complaint-rut">RUT del denunciante</label>
+        <input type="text" id="complaint-rut" required value="-">
+
+        <label for="motivo">Motivo denuncia</label>
+        <textarea name="motivo" id="motivo" maxlength=200 required
+        ></textarea>
+
+        <label for="description">Descripción sospechoso (Opcional)</label>
+        <textarea name="description" id="description" maxlength=150></textarea>
+
+        <label for="date">Fecha</label>
+        <input type="date" id="date" required>
+
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" required>
+
+        <input type="submit" value="Guardar" class="btn btn-save">
+      
+    </div>
+
+  </div>
+
+</body>
+</html>
